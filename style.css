@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    color: rgb(130, 95, 50);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Alle bokser */
+.container,
+.omMeg,
+.container2,
+.container3,
+.container4,
+.container5,
+.container6,
+.kontakt {
+    background-color: white;
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Bilde */
+img {
+    width: 250px;
+
+    border-radius: 20px;
+
+    margin-top: 20px;
+}
+
+/* Prosjektbokser */
+.container2,
+.container3,
+.container4,
+.container5,
+.container6 {
+    min-height: 180px;
+}
+
+/* Kontakt */
+.kontakt {
+    margin-bottom: 50px;
+}
+
+/* Mobil */
+@media (max-width: 700px) {
+
+.container,
+.omMeg,
+.container2,
+.container3,
+.container4,
+.container5,
+.container6,
+.kontakt {
+
+width: 95%;
+
+padding: 20px;
+
+}
+
+img {
+width: 180px;
+}
+
+h1 {
+font-size: 35px;
+}
+
+}
