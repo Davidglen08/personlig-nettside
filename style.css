@@ -12,6 +12,20 @@ body {
     padding: 30px;
 }
 
+/* Lenker */
+a {
+    color: rgb(130, 95, 50);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* Overskrifter */
 h1 {
     font-size: 50px;
     margin-bottom: 20px;
@@ -27,6 +41,40 @@ h3 {
 
 p {
     margin-bottom: 15px;
+    line-height: 1.8;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Skjuler innhold */
+.skjult {
+    display: none;
+}
+
+/* Accordion-knapper */
+.toggleBtn {
+    background-color: white;
+    color: rgb(130, 95, 50);
+    width: 80%;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 15px auto;
+    display: block;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.toggleBtn:hover {
+    transform: scale(1.02);
+}
+
+.toggleBtn:active {
+    transform: scale(0.98);
 }
 
 /* Alle bokser */
@@ -42,20 +90,20 @@ p {
     width: 80%;
     margin: 30px auto;
     padding: 30px;
-
     border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 
-    box-shadow:
-    0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
-/* Bilde */
-img {
-    width: 250px;
-
-    border-radius: 20px;
-
-    margin-top: 20px;
+.container:hover,
+.omMeg:hover,
+.container2:hover,
+.container3:hover,
+.container4:hover,
+.container5:hover,
+.container6:hover {
+    transform: translateY(-3px);
 }
 
 /* Prosjektbokser */
@@ -67,35 +115,108 @@ img {
     min-height: 180px;
 }
 
+/* Standard bilder */
+img {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/* Større prosjekter */
+.mysimpledatabase,
+.vigilante {
+    max-width: 800px;
+    height: auto;
+}
+
+/* Mellomstore prosjekter */
+.netflixcss,
+.finn-tallet,
+.komponenter,
+.pcss {
+    max-width: 600px;
+}
+
+/* Praksisbilde */
+.praksisplsass {
+    max-width: 500px;
+    height: 400px;
+}
+
+.Intropic {
+    max-width: 300px;
+    height: auto;
+}
+
+.retropi {
+    max-width: 500px;
+    height: 400px;
+}
+
+/* Vanlige knapper */
+input[type="button"] {
+    background-color: white;
+    color: rgb(130, 95, 50);
+    border: none;
+    border-radius: 15px;
+    padding: 12px 20px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+input[type="button"]:hover {
+    transform: scale(1.05);
+}
+
 /* Kontakt */
 .kontakt {
     margin-bottom: 50px;
 }
 
+.kontakt h1 {
+    margin-bottom: 20px;
+}
+
+.kontakt h3 {
+    margin-top: 15px;
+}
+
+.kontakt p {
+    font-size: 18px;
+}
+
 /* Mobil */
 @media (max-width: 700px) {
 
-.container,
-.omMeg,
-.container2,
-.container3,
-.container4,
-.container5,
-.container6,
-.kontakt {
+    .container,
+    .omMeg,
+    .container2,
+    .container3,
+    .container4,
+    .container5,
+    .container6,
+    .kontakt,
+    .toggleBtn {
+        width: 95%;
+        padding: 20px;
+    }
 
-width: 95%;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 
-padding: 20px;
+    h1 {
+        font-size: 35px;
+    }
 
-}
-
-img {
-width: 180px;
-}
-
-h1 {
-font-size: 35px;
-}
-
+    .toggleBtn {
+        font-size: 20px;
+    }
 }
