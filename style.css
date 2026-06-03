@@ -207,6 +207,8 @@ input[type="button"]:hover {
 
     border-radius: 15px;
     border: none;
+  
+    box-shadow: 0 5px 15px rgba(130, 95, 50, 0.2);
 }
 
 /* 📱 Mobile / small screens */
