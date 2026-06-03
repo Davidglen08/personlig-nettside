@@ -191,6 +191,23 @@ input[type="button"]:hover {
     font-size: 18px;
 }
 
+/* Video styling (desktop default) */
+video {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* 📱 Mobile / small screens */
+@media (max-width: 700px) {
+    video {
+        width: 95%;
+        height: auto;
+    }
+}
 /* Mobil */
 @media (max-width: 700px) {
 
